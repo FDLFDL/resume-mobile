@@ -7,24 +7,6 @@ function touchMove() {
         winW = desW;
     }
     document.documentElement.style.fontSize = winW / rem + 'px';
-    var audioDemo = document.querySelector("#audioDemo"),
-        musicBtn = document.querySelector("#music");
-    window.setTimeout(function () {
-        audioDemo.play();
-        audioDemo.addEventListener("canplay", function () {
-            musicBtn.style.display = "block";
-            musicBtn.className = "musicMove";
-        }, false);
-        musicBtn.addEventListener("touchend", function () {
-            if (audioDemo.paused) {
-                audioDemo.play();
-                musicBtn.className = "musicMove";
-                return;
-            }
-            audioDemo.pause();
-            musicBtn.className = "";
-        }, false);
-    }, 500);
 
     var oLis = document.querySelectorAll("#banner>li");
     [].forEach.call(oLis, function () {
