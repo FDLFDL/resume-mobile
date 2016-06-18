@@ -71,8 +71,8 @@ function touchMove() {
                 }
                 this.firstElementChild.id = "page" + (this.index + 1);
             }, false);
-            this.flag = false;
         }
+        this.flag = false;
     }
 }
 document.addEventListener("touchmove", function () {
