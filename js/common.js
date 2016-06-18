@@ -53,7 +53,7 @@ function touchMove() {
                     duration = winW + movePosX;
                 }
                 this.style.webkitTransform = 'translate(' + slate + 'rem) scale(' + (Math.abs(this.startX - movePosX) / winW * step) + ')';
-                this.style.webkitTransition = "1s linear";
+                this.style.webkitTransition = "1.5s linear";
                 oLis[this.prevSIndex].style.webkitTransform = "translate(" + duration + "px,0)";
                 oLis[this.prevSIndex].id = 'zIndex';
                 oLis[this.prevSIndex].style.display = "block";
