@@ -52,7 +52,7 @@ a {
     -webkit-transform: rotate(135deg);
     animation: rightflip 1.5s infinite ease-in-out;
     -webkit-animation: rightflip 1.5s infinite ease-in-out;
-    z-index: 750;
+    z-index: 200;
 }
 
 @keyframes rightflip {
@@ -96,7 +96,7 @@ a {
     background-size: 100% 100%;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    z-index: 150;
+    z-index: 200;
 }
 
 .musicMove {
@@ -139,7 +139,7 @@ a {
 }
 
 #zIndex {
-    z-index: 600;
+    z-index: 200;
 }
 
 .banner .page1 {
@@ -613,7 +613,7 @@ a {
     border-radius: 50%;
     background: rgba(212, 212, 212, 0.29);
     position: absolute;
-    z-index: 5;
+    z-index: 50;
     opacity: 0;
 }
 
@@ -1215,8 +1215,8 @@ a {
     opacity: 1;
     transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;
-    animation: puffIn0 2s ease 0.5s 1 backwards;
-    -webkit-animation: puffIn0 2s ease 0.5s 1 backwards;
+    animation: puffIn0 2s ease 0.1s 1 backwards;
+    -webkit-animation: puffIn0 2s ease 0.1s 1 backwards;
 }
 
 @keyframes puffIn0 {
@@ -1251,8 +1251,8 @@ a {
 
 #page8 .anyeo .epitome {
     opacity: 1;
-    animation: puffIn1 2.2s ease 1.5s 1 both;
-    -webkit-animation: puffIn1 2.2s ease 1.5s 1 both;
+    animation: puffIn1 2.2s ease 1s 1 both;
+    -webkit-animation: puffIn1 2.2s ease 1s 1 both;
     transform-origin: 60% 50%;
     -webkit-transform-origin: 60% 50%;
 }
@@ -1292,8 +1292,8 @@ a {
 
 #page8 .erweima {
     opacity: 1;
-    animation: puffIn2 1.5s ease 2s 1 both;
-    -webkit-animation: puffIn2 1.5s ease 2s 1 both;
+    animation: puffIn2 1.5s ease 1.5s 1 both;
+    -webkit-animation: puffIn2 1.5s ease 1.5s 1 both;
 }
 
 @keyframes puffIn2 {
@@ -1337,6 +1337,6 @@ a {
 
 #page8 p {
     opacity: 1;
-    animation: bounceInUp 1.5s ease 2.5s 1 both;
-    -webkit-animation: bounceInUp 1.5s ease 2.5s 1 both;
+    animation: bounceInUp 1.5s ease 2s 1 both;
+    -webkit-animation: bounceInUp 1.5s ease 2s 1 both;
 }

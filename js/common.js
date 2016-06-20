@@ -52,8 +52,9 @@ function touchMove() {
                     slate = -3.5;
                     duration = winW + movePosX;
                 }
-                this.style.webkitTransform = 'translate(' + slate + 'rem) scale(' + (Math.abs(this.startX - movePosX) / winW * step) + ')';
-                this.style.webkitTransition = "1.5s linear";
+                this.style.webkitTransform = 'translate(' + slate + 'rem) scale(' + (Math.abs(this.startX / 2 - movePosX) / winW * step) + ')';
+                this.style.zIndex = '';
+                this.style.webkitTransition = "1.2s linear";
                 oLis[this.prevSIndex].style.webkitTransform = "translate(" + duration + "px,0)";
                 oLis[this.prevSIndex].id = 'zIndex';
                 oLis[this.prevSIndex].style.display = "block";
@@ -63,7 +64,7 @@ function touchMove() {
 
     function end() {
         if (this.flag) {
-            oLis[this.prevSIndex].style.webkitTransition = "1s ease-out";
+            oLis[this.prevSIndex].style.webkitTransition = "1.2s ease-out";
             oLis[this.prevSIndex].style.webkitTransform = "translate(0,0)";
             oLis[this.prevSIndex].addEventListener("webkitTransitionEnd", function (ev) {
                 if (ev.target.tagName == "LI") {
