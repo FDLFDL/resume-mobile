@@ -165,7 +165,7 @@ a {
 
 .page1 .center a {
     position: absolute;
-    top: 16.5%;
+    top: 11.5%;
     left: 50%;
     margin-left: -1.2rem;
     width: 2.4rem;
@@ -185,7 +185,7 @@ a {
 
 .page1 .center .p0 {
     position: absolute;
-    top: 36%;
+    top: 35%;
     left: 50%;
     margin-left: -1.05rem;
     width: 2.2rem;
@@ -202,7 +202,7 @@ a {
 
 .page1 .center .name {
     position: absolute;
-    top: 46.5%;
+    top: 47.5%;
     left: 24%;
     margin-left: -1.08rem;
     opacity: 0;
@@ -220,8 +220,8 @@ a {
 }
 
 .page1 .center .name1 p {
-    height: 0.8rem;
-    padding-left: 0.1rem;
+    height: 0.6rem;
+    padding: 0.1rem 0 0 0.1rem;
 }
 
 .page1 .center .name1 p:nth-child(1) span:nth-child(2) {
@@ -249,14 +249,14 @@ a {
 }
 
 .page1 .center .name1 p span {
-    line-height: 0.8rem;
+    line-height: 0.6rem;
     float: left;
-    font-size: 0.4rem;
-    margin-right: 0.2rem;
+    font-size: 0.35rem;
+    margin-left: 0.18rem;
 }
 
 .page1 .center .name2 {
-    border: 0.8rem solid transparent;
+    border: 0.6rem solid transparent;
     border-top-color: rgba(212, 212, 212, 0.29);
     border-right-width: 2.6rem;
     border-left: 2.6rem solid rgba(212, 212, 212, 0.29);
@@ -264,43 +264,41 @@ a {
 
 .page1 .center .bottom {
     position: absolute;
-    bottom: -2rem;
-    right: -5rem;
-    width: 200%;
+    right: -14rem;
+    bottom: -27rem;
+    width: 400%;
     height: 5rem;
     background: rgba(0, 0, 0, 0.39);
-    transform: rotate(162deg);
-    -webkit-transform: rotate(162deg);
+    transform: rotate(167deg);
+    -webkit-transform: rotate(167deg);
+    border-bottom: 0.1rem groove rgba(187, 187, 187, 0.25);
     opacity: 0;
 }
 
 #page1 .center .bottom {
-    opacity: 1;
-    animation: fa 1.1s ease 0.4s 1 both;
-    -webkit-animation: fa 1.1s ease 0.4s 1 both;
+    opacity: 0.9;
+    animation: fak 1.1s ease 0.4s 1 both;
+    -webkit-animation: fak 1.1s ease 0.4s 1 both;
 }
 
-@keyframes fa {
+@keyframes fak {
     0% {
         opacity: 0.2;
-        bottom: -8rem;
+
     }
     100% {
-        opacity: 1;
-        bottom: -2rem;
-        border-bottom: 0.1rem groove rgba(187, 187, 187, 0.25);
+        opacity: 0.9;
+        bottom: -8rem;
     }
 }
 
-@-webkit-keyframes fa {
+@-webkit-keyframes fak {
     0% {
         opacity: 0.2;
-        bottom: -8rem;
     }
     100% {
-        opacity: 1;
-        bottom: -2rem;
-        border-bottom: 0.1rem groove rgba(187, 187, 187, 0.25);
+        opacity: 0.9;
+        bottom: -8rem;
     }
 }
 
@@ -308,7 +306,7 @@ a {
     font-size: 0.5rem;
     position: absolute;
     right: 0.5rem;
-    bottom: 0.8rem;
+    bottom: 0.5rem;
     width: 3rem;
     height: 0.8rem;
     line-height: 0.8rem;
@@ -354,7 +352,7 @@ a {
 }
 
 .page2 ul {
-    padding: 0.35rem 0.1rem 0.1rem;
+    padding: 0.15rem 0.1rem 0.1rem;
     height: 100%;
     background: url("../images/8.png") no-repeat;
     -webkit-background-size: 100% 100%;
@@ -362,10 +360,10 @@ a {
 }
 
 .page2 ul li {
-    padding: 0.2rem;
-    font-size: 0.35rem;
+    padding: 0.1rem;
+    font-size: 0.3rem;
     width: 90%;
-    margin: 0.3rem 0.11rem;
+    margin: 0.2rem 0.11rem;
     height: 1rem;
     line-height: 0.5rem;
     text-align: center;
@@ -404,10 +402,10 @@ a {
     background: url("../images/0.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    top: 0.39rem;
+    top: 0.37rem;
     left: 0.2rem;
     width: 6rem;
-    height: 10.6rem;
+    height: 8.6rem;
     opacity: 0;
 }
 
@@ -419,11 +417,11 @@ a {
 
 .page3 .Transparent-film div {
     position: absolute;
-    top: 0.45rem;
-    left: 0.38rem;
-    width: 5.25rem;
-    height: 8.95rem;
-    padding: 0.4rem 0;
+    top: 0.36rem;
+    left: 0.36rem;
+    width: 5.28rem;
+    height: 7.3rem;
+    padding: 0.3rem 0;
     background: url("../images/3.jpg") no-repeat 45%;
     background-size: 240% 100%;
     opacity: 0;
@@ -436,7 +434,7 @@ a {
 }
 
 .page3 .Transparent-film div p {
-    margin: 0.3rem 0.3rem;
+    margin: 0.22rem 0.3rem;
     font-size: 0.35rem;
 }
 
@@ -458,6 +456,7 @@ a {
 
 .page3 .Transparent-film div p:nth-child(5) {
     color: rgba(231, 185, 41, 0.95);
+    margin-top: 0.5rem;
 }
 
 .page4 {
@@ -708,8 +707,8 @@ a {
 }
 
 .page5 .bgXK i:nth-child(11) {
-    left: 0.6rem;
-    top: 9.25em;
+    left: 0.8rem;
+    top: 8.75em;
 }
 
 .page5 .bgXK i:nth-child(13) {
@@ -738,13 +737,13 @@ a {
 }
 
 .page5 .bgXK i:nth-child(23) {
-    top: 7.5rem;
-    left: 3.1rem;
+    top: 7.45rem;
+    left: 3.05rem;
 }
 
 .page5 .bgXK i:nth-child(25) {
-    top: 10.1rem;
-    left: 2.9rem;
+    top: 9rem;
+    left: 2.93rem;
 }
 
 .page5 .bgXK i:nth-child(27) {
@@ -781,10 +780,11 @@ a {
 }
 
 .page5 .bgXK p:nth-child(10) {
-    top: 8.65rem;
-    left: 0.35rem;
-    transform: rotate(122deg);
-    -webkit-transform: rotate(122deg);
+    width: 1.1rem;
+    top: 8.4rem;
+    left: 0.7rem;
+    transform: rotate(127deg);
+    -webkit-transform: rotate(127deg);
 }
 
 .page5 .bgXK p:nth-child(12) {
@@ -848,11 +848,11 @@ a {
 }
 
 .page5 .bgXK p:nth-child(28) {
-    top: 8.9rem;
-    left: 1.8rem;
+    top: 8.33rem;
+    left: 2.37rem;
     transform: rotate(94deg);
     -webkit-transform: rotate(94deg);
-    width: 2.65rem;
+    width: 1.5rem;
 }
 
 .page6 {
@@ -876,7 +876,7 @@ a {
 }
 
 .page6 .Strengths .technology {
-    padding: 20% 0 5%;
+    padding: 10% 0 0 0;
     height: 0.8rem;
     line-height: 0.8rem;
     font-weight: bold;
@@ -901,12 +901,15 @@ a {
 }
 
 .page6 .Strengths .detailed ul li b {
+    position: relative;
+    left: -3rem;
     display: inline-block;
     color: silver;
     opacity: 0;
 }
 
 #page6 .Strengths .detailed ul li b {
+    left: 0;
     opacity: 1;
     animation: fadeInLeft 0.4s ease 0.4s 1 both;
     -webkit-animation: fadeInLeft 0.4s ease 0.4s 1 both;
@@ -914,6 +917,8 @@ a {
 
 .page6 .Strengths .detailed ul li p {
     font-family: '宋体 ', sans-serif;
+    position: relative;
+    right: -1rem;
     float: right;
     display: inline-block;
     width: 3rem;
@@ -923,6 +928,7 @@ a {
 }
 
 #page6 .Strengths .detailed ul li p {
+    right: 0;
     opacity: 1;
     animation: fadeInRight 0.45s ease 0.4s 1 both;
     -webkit-animation: fadeInRight 0.45s ease 0.4s 1 both;
@@ -1035,7 +1041,7 @@ a {
 
 .page7 .top {
     position: absolute;
-    top: 1.7rem;
+    top: 0.9rem;
     left: 0.7rem;
     font-size: 0.5rem;
     color: #050505;
@@ -1079,7 +1085,7 @@ a {
 
 .page7 .details {
     position: absolute;
-    top: 4.5rem;
+    top: 3.5rem;
     left: 0.5rem;
     width: 5.4rem;
     height: 5.1rem;
@@ -1246,11 +1252,11 @@ a {
     height: 100%;
     background: url("../images/7.png") no-repeat;
     background-size: 100% 110%;
-    opacity: 0;
+    opacity: 0.1;
 }
 
 #page8 .anyeo .epitome {
-    opacity: 1;
+    opacity: 0.3;
     animation: puffIn1 2.2s ease 1s 1 both;
     -webkit-animation: puffIn1 2.2s ease 1s 1 both;
     transform-origin: 60% 50%;
@@ -1282,8 +1288,8 @@ a {
 .page8 .erweima {
     position: absolute;
     width: 2.8rem;
-    height: 3.4rem;
-    top: 2.3rem;
+    height: 3.2rem;
+    top: 1.65rem;
     left: 1.8rem;
     background: url("../images/5.png") no-repeat center papayawhip;
     background-size: 95% 95%;
@@ -1327,7 +1333,7 @@ a {
     color: #0287f6;
     font-weight: bold;
     text-align: center;
-    top: 6.5rem;
+    top: 5.5rem;
     left: 1.2rem;
     display: inline-block;
     border-radius: 99px;
