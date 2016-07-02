@@ -7,7 +7,6 @@ function touchMove() {
         winW = desW;
     }
     document.documentElement.style.fontSize = winW / rem + 'px';
-
     var oLis = document.querySelectorAll("#banner>li");
     [].forEach.call(oLis, function () {
         var oLi = arguments[0];
@@ -31,7 +30,7 @@ function touchMove() {
             var moveTouchX = e.changedTouches[0].pageX;
             var movePosY = moveTouchY - this.startY;
             var movePosX = moveTouchX - this.startX;
-            if (Math.abs(movePosX) > Math.abs(movePosY)) {
+            if (Math.abs(movePosY) > Math.abs(movePosX)) {
                 this.flag = true;
                 var index = this.index;
                 this.style.webkitTransition = "";
@@ -42,20 +41,16 @@ function touchMove() {
                     }
                     arguments[0].firstElementChild.id = "";
                 });
-                var slate = 0;
-                if (movePosX > 0) {/*>*/
+                if (movePosY > 0) {/*>*/
                     this.prevSIndex = (index == 0 ? oLis.length - 1 : index - 1);
-                    slate = 3.5;
-                    duration = -winW + movePosX;
+                    duration = -winW + movePosY;
                 } else {/*<*/
                     this.prevSIndex = (index == oLis.length - 1 ? 0 : index + 1);
-                    slate = -3.5;
-                    duration = winW + movePosX;
+                    duration = winW + movePosY;
                 }
-                this.style.webkitTransform = 'translate(' + slate + 'rem) scale(' + (Math.abs(this.startX / 2 - movePosX) / winW * step) + ')';
-                this.style.zIndex = '';
-                this.style.webkitTransition = "1.2s linear";
-                oLis[this.prevSIndex].style.webkitTransform = "translate(" + duration + "px,0)";
+                this.style.webkitTransform = 'translate(0,' + movePosY + 'px) scale(' + (1 - Math.abs(this.startY / 2 - movePosY) / winW * step) + ')';
+                oLis[this.prevSIndex].style.webkitTransform = "translate(0," + duration + "px)";
+                this.style.webkitTransition = "1.5s linear";
                 oLis[this.prevSIndex].id = 'zIndex';
                 oLis[this.prevSIndex].style.display = "block";
             }
@@ -76,6 +71,5 @@ function touchMove() {
         this.flag = false;
     }
 }
-document.addEventListener("touchmove", function () {
-}, false);
+
 touchMove();
